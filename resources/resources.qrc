@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="qml/main.qml">../src/qml/main.qml</file>
+        <file alias="qml/components/CustomImage.qml">../src/qml/components/CustomImage.qml</file>
+        <file alias="qml/components/Speedometer.qml">../src/qml/components/Speedometer.qml</file>
+        <file alias="qml/components/Tachometer.qml">../src/qml/components/Tachometer.qml</file>
+        <file alias="qml/components/FuelGauge.qml">../src/qml/components/FuelGauge.qml</file>
+        <file alias="qml/components/TempGauge.qml">../src/qml/components/TempGauge.qml</file>
+        <file alias="Images/temp/temp_face.svg">Images/temp/temp_face.svg</file>
+        <file alias="Images/temp/temp_needle.svg">Images/temp/temp_needle.svg</file>
+        <file alias="Images/temp/temp_case.svg">Images/temp/temp_case.svg</file>
+        <file alias="Images/speedo/speedo_face.svg">Images/speedo/speedo_face.svg</file>
+        <file alias="Images/speedo/speedo_needle.svg">Images/speedo/speedo_needle.svg</file>
+        <file alias="Images/speedo/speedo_case.svg">Images/speedo/speedo_case.svg</file>
+        <file alias="Images/tacho/tacho_face.svg">Images/tacho/tacho_face.svg</file>
+        <file alias="Images/tacho/tacho_needle.svg">Images/tacho/tacho_needle.svg</file>
+        <file alias="Images/fuel/fuel_face.svg">Images/fuel/fuel_face.svg</file>
+        <file alias="Images/fuel/fuel_needle.svg">Images/fuel/fuel_needle.svg</file>
+        <file alias="Images/fuel/fuel_case.svg">Images/fuel/fuel_case.svg</file>
+    </qresource>
+</RCC>
