@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="chrome" x1="0%" y1="0%" x2="0%" y2="100%">
+<stop offset="0%" stop-color="#666666"/>
+<stop offset="50%" stop-color="#CCCCCC"/>
+<stop offset="100%" stop-color="#666666"/>
+</linearGradient>
+</defs>
+<path d="M 200,0 A 200,200 0 1 1 200,400 A 200,200 0 1 1 200,0 Z M 200,15 A 185,185 0 1 0 200,385 A 185,185 0 1 0 200,15 Z" fill="url(#chrome)" fill-rule="evenodd" />
+</svg>
