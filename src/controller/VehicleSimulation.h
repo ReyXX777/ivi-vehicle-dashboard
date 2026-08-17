@@ -3,6 +3,7 @@
 
 #include <QObject>
 #include <QTimer>
+#include <cstdint>
 
 class VehicleData;
 
@@ -24,10 +25,11 @@ private:
     void simulateDriveDynamics(double dt);
     void simulateFuel(double dt);
     void simulateEngineTemp(double dt);
-    VehicleData *m_vehicle = nullptr;
-    QTimer m_timer;
-    quint64 m_previousTime = 0;
-    double m_simTime = 0.0;
+
+    VehicleData *m_vehicle{nullptr};
+    QTimer m_timer{};
+    std::uint64_t m_previousTime{0U};
+    double m_simTime{0.0e0};
 };
 
-#endif // VEHICLESIMULATION_H
+#endif
