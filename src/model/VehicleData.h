@@ -12,7 +12,6 @@ class VehicleData : public QObject
     Q_PROPERTY(double fuelLevel READ fuelLevel WRITE setFuelLevel NOTIFY fuelLevelChanged FINAL)
     Q_PROPERTY(double engineTemp READ engineTemp WRITE setEngineTemp NOTIFY engineTempChanged FINAL)
 
-
 public:
     explicit VehicleData(QObject *parent = nullptr);
 
@@ -35,10 +34,10 @@ signals:
     void engineTempChanged();
 
 private:
-    double m_speed = 0.0;
-    double m_rpm = 0.0;
-    double m_fuelLevel = 0.75;
-    double m_engineTemp = 90.0;
+    double m_speed{0.0e0};
+    double m_rpm{0.0e0};
+    double m_fuelLevel{7.5e-1};
+    double m_engineTemp{9.0e1};
 };
 
-#endif // VEHICLEDATA_H
+#endif
