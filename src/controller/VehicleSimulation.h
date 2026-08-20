@@ -5,16 +5,20 @@
 #include <QTimer>
 #include <cstdint>
 
+namespace model {
 class VehicleData;
+}
+
+namespace controller {
 
 class VehicleSimulation : public QObject
 {
     Q_OBJECT
 
 public:
-    explicit VehicleSimulation(QObject *parent = nullptr);
+    explicit VehicleSimulation(QObject *l_parent = nullptr);
 
-    void setVehicleData(VehicleData *data);
+    void setVehicleData(::model::VehicleData *l_data);
     void init();
     void stop();
 
@@ -22,14 +26,16 @@ private slots:
     void update();
 
 private:
-    void simulateDriveDynamics(double dt);
-    void simulateFuel(double dt);
-    void simulateEngineTemp(double dt);
+    void simulateDriveDynamics(double l_dt);
+    void simulateFuel(double l_dt);
+    void simulateEngineTemp(double l_dt);
 
-    VehicleData *m_vehicle{nullptr};
+    ::model::VehicleData *m_vehicle{nullptr};
     QTimer m_timer{};
-    std::uint64_t m_previousTime{0U};
+    ::std::uint64_t m_previousTime{0U};
     double m_simTime{0.0e0};
 };
 
-#endif
+} // namespace controller
+
+#endif // VEHICLESIMULATION_H
