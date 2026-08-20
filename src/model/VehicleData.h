@@ -4,6 +4,8 @@
 #include <QObject>
 #include <QtMath>
 
+namespace model {
+
 class VehicleData : public QObject
 {
     Q_OBJECT
@@ -13,19 +15,19 @@ class VehicleData : public QObject
     Q_PROPERTY(double engineTemp READ engineTemp WRITE setEngineTemp NOTIFY engineTempChanged FINAL)
 
 public:
-    explicit VehicleData(QObject *parent = nullptr);
+    explicit VehicleData(QObject *l_parent = nullptr);
 
     double speed() const;
-    void setSpeed(double newSpeed);
+    void setSpeed(double l_newSpeed);
 
     double rpm() const;
-    void setRpm(double newRpm);
+    void setRpm(double l_newRpm);
 
     double fuelLevel() const;
-    void setFuelLevel(double newFuelLevel);
+    void setFuelLevel(double l_newFuelLevel);
 
     double engineTemp() const;
-    void setEngineTemp(double newEngineTemp);
+    void setEngineTemp(double l_newEngineTemp);
 
 signals:
     void speedChanged();
@@ -40,4 +42,6 @@ private:
     double m_engineTemp{9.0e1};
 };
 
-#endif
+} // namespace model
+
+#endif // VEHICLEDATA_H
